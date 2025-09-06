@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Search</title>
+
+  <!-- FontAwesome for icons -->
+  <script src="https://use.fontawesome.com/2180418238.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="advanced_search.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <ul>
+      <li id="logo">
+        <img src="google_logo.png" alt="Google Logo">
+      </li>
+      <li id="back_to_main">
+        <a href="index.html">Back to Main</a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Main Section -->
+  <section>
+    <h2>Advanced Search</h2>
+
+    <div class="container">
+      <form action="https://google.com/search" method="GET" target="_blank">
+        
+        <!-- All these words -->
+        <div class="label_item1">
+          <label for="1">all these words:</label>
+        </div>
+        <div class="input_item1">
+          <input id="1" type="text" name="as_q">
+          <span>Type the important words: tri-colour rat terrier</span>
+        </div>
+
+        <!-- Exact word or phrase -->
+        <div class="label_item2">
+          <label for="2">this exact word or phrase:</label>
+        </div>
+        <div class="input_item2">
+          <input id="2" type="text" name="as_epq">
+          <span>Put exact words in quotes: "rat terrier"</span>
+        </div>
+
+        <!-- Any of these words -->
+        <div class="label_item3">
+          <label for="3">any of these words:</label>
+        </div>
+        <div class="input_item3">
+          <input id="3" type="text" name="as_oq">
+          <span>Type OR between all the words you want: miniature OR standard</span>
+        </div>
+
+        <!-- None of these words -->
+        <div class="label_item4">
+          <label for="4">none of these words:</label>
+        </div>
+        <div class="input_item4">
+          <input id="4" type="text" name="as_eq">
+          <span>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="button">
+          <input type="submit" value="Advanced Search">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer1">
+      <ul>
+        <li><a href="#">Iraq</a></li>
+      </ul>
+    </div>
+    <div class="footer2">
+      <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

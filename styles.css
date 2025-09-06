@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+}
+
+/* Navigation Bar */
+#navdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 8px 8px;
+  background-color: #fff;
+}
+
+#links-container a {
+  color: #1a0dab;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#links-container a:hover {
+  text-decoration: underline;
+}
+
+#navdiv a {
+  color: #3c4043;
+  text-decoration: none;
+}
+
+#sign-in-container {
+  margin-left: 16px;
+}
+
+/* Google Logo */
+#googleimg {
+  display: block;
+  margin: 170px auto 50px;
+  width: 272px;
+  height: 92px;
+}
+
+/* Main Search Area */
+#maindiv {
+  display: flex;
+  justify-content: center;
+}
+
+#inputspan {
+  position: relative;
+  border: 1px solid #cfcfcf;
+  border-radius: 24px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+#inputspan:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#inputspan input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 500px;
+  padding-left: 30px;
+}
+
+/* Search Button */
+#search-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#search-button img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Search Buttons Section */
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+section button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #5f6368;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+section button:hover {
+  border: 1px solid #c7c7c7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+/* Sign-in Button */
+#sign-in-button,
+#sign-in-button:link,
+#sign-in-button:visited,
+#sign-in-button:hover,
+#sign-in-button:active,
+#sign-in-button:focus {
+  background-color: #006dd9;
+  border: 1px solid #f8f9fa;
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer1,
+.footer2 {
+  padding: 1px 1.5em;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.footer1 {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  justify-content: flex-start;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #70757a;
+  font-size: 13px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

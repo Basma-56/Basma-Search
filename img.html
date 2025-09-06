@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="navdiv">
+      <div id="links-container">
+        <a href="index.html">Back to Main</a>
+      </div>
+      <div id="sign-in-container">
+        <a href="https://www.google.com/accounts/Login" id="sign-in-button">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <img src="google_logo2.png" id="googleimg" alt="Google">
+
+    <div id="maindiv">
+      <form 
+        id="image-search-form" 
+        method="GET" 
+        action="https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}" 
+        target="_blank"
+      >
+        <span id="inputspan">
+          <input 
+            type="text" 
+            name="q" 
+            aria-label="Search" 
+            onkeydown="handleKeyDown(event)"
+          >
+          <button 
+            id="search-button" 
+            type="button" 
+            onclick="redirectToImagesPage()"
+          >
+            <img src="icon.png" alt="Search">
+          </button>
+        </span>
+      </form>
+    </div>
+
+    <section>
+      <button type="submit" onclick="redirectToImagesPage()">Image Search</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer1">
+      <ul>
+        <li><a href="#">Iraq</a></li>
+      </ul>
+    </div>
+    <div class="footer2">
+      <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function handleKeyDown(event) {
+      if (event.key === "Enter") {
+        redirectToImagesPage();
+      }
+    }
+
+    function redirectToImagesPage() {
+      const query = document.querySelector('input[name="q"]').value;
+      window.location.href = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
+    }
+
+    window.onload = function () {
+      const input = document.querySelector('input[name="q"]');
+      const inputspan = document.getElementById('inputspan');
+
+      input.addEventListener('focus', function () {
+        inputspan.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+      });
+
+      input.addEventListener('blur', function () {
+        inputspan.style.boxShadow = '';
+      });
+    };
+  </script>
+</body>
+</html>
